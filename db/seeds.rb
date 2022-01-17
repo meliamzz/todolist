@@ -5,3 +5,54 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "DB cleaning"
+User.destroy_all
+
+puts "DB cleaned!"
+
+puts "User creation..."
+
+user1 = User.create!(
+  username: "Mélia",
+  email: "melia@mail.com",
+  password: "secret"
+)
+
+puts "User created!"
+
+puts "Lists creation..."
+
+list1 = List.create!(
+  name: "Travaux",
+  user: user1
+)
+
+list2 = List.create!(
+  name: "Rangement",
+  user: user1
+)
+
+puts "Lists created!"
+
+puts "Tasks creation..."
+
+task1 = Task.create!(
+  description: "Enlever colle étage" ,
+  list: list1
+)
+
+task1 = Task.create!(
+  description: "Vider les gravats à la déchetterie",
+  list: list1
+)
+
+task1 = Task.create!(
+  description: "Nettoyer salle de bain",
+  list: list2
+)
+
+task1 = Task.create!(
+  description: "Nettoyer escaliers",
+  list: list2
+)
