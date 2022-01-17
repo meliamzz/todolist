@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :lists do
-    member do
-      resources :tasks
-    end
+    resources :tasks
   end
 end
