@@ -1,3 +1,12 @@
 <div class="banner">
   <h2>Even Santa Claus makes lists</h2>
 </div>
+
+<div class="presentation">
+  <h3><strong>List</strong> is your best friend to organized, planned or remember what you have to do!</h3>
+  <% if user_signed_in? %>
+    <%= link_to "See all my lists!", lists_path, class: "btn btn-danger" %>
+  <% else %>
+    <%= link_to "Start now!", new_user_session_path, class: "btn btn-danger" %>
+  <% end %>
+</div>
