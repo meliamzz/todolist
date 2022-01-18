@@ -19,6 +19,12 @@ user1 = User.create!(
   password: "secret"
 )
 
+user2 = User.create!(
+  username: "Julie",
+  email: "julie@mail.com",
+  password: "secret"
+)
+
 puts "User created!"
 
 puts "Lists creation..."
@@ -31,6 +37,11 @@ list1 = List.create!(
 list2 = List.create!(
   name: "Rangement",
   user: user1
+)
+
+list3 = List.create!(
+  name: "baby",
+  user: user2
 )
 
 puts "Lists created!"
