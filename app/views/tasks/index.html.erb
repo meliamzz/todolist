@@ -1,0 +1,14 @@
+<h3><%= @list.name %></h3>
+
+<ul>
+<%= simple_form_for([@list, @task]) do |f| %>
+  <%= f.input :description %>
+  <%= f.submit "Add a task" %>
+<% end %>
+
+<% @tasks.each do |task| %>
+  <li>
+    <%= task.description %>
+  </li>
+<% end %>
+</ul>
