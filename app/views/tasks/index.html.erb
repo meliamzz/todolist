@@ -2,8 +2,8 @@
 
 <ul>
 <%= simple_form_for([@list, @task]) do |f| %>
-  <%= f.input :description %>
-  <%= f.submit "Add a task" %>
+  <%= f.input :description, label: "What task do you want to add?" %>
+  <%= f.submit "Add!" %>
 <% end %>
 
 <% @tasks.each do |task| %>
