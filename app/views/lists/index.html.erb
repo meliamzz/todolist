@@ -5,7 +5,9 @@
       <div class="card-header">
         <%= list.name %>
         <%= link_to "edit list", edit_list_path(list) %>
-        <%= link_to "delete list", list_path(list), method: :delete  %>
+        <%= link_to list_path(list), method: :delete do %>
+          <i class="fas fa-trash-alt"></i>
+        <% end %>
       </div>
       <div class="card-body">
         <ul>
@@ -18,6 +20,5 @@
     <% end %>
   <% end %>
 </div>
-
 
 <%= link_to "Create a new list", new_list_path %>
