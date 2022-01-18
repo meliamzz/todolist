@@ -8,6 +8,13 @@
 
   <% @tasks.each do |task| %>
     <li>
+    <%= link_to list_task_path(@list, task), method: :patch do %>
+      <% if task.done? %>
+        <i class="far fa-check-circle"></i>
+      <% else %>
+        <i class="far fa-circle"></i>
+      <% end %>
+      <% end %>
       <%= task.description %>
       <%= link_to "delete", list_task_path(@list, task), method: :delete %>
     </li>
