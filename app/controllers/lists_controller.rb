@@ -12,7 +12,7 @@ class ListsController < ApplicationController
     @list = List.new(list_params)
     @list.user = current_user
     if @list.save
-      redirect_to list_path(@list)
+      redirect_to list_tasks_path(@list)
     end
   end
 
