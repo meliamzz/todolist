@@ -1,14 +1,15 @@
 <h3><%= @list.name %></h3>
 
 <ul>
-<%= simple_form_for([@list, @task]) do |f| %>
-  <%= f.input :description, label: "What task do you want to add?" %>
-  <%= f.submit "Add!" %>
-<% end %>
+  <%= simple_form_for([@list, @task]) do |f| %>
+    <%= f.input :description, label: "What task do you want to add?" %>
+    <%= f.submit "Add!" %>
+  <% end %>
 
-<% @tasks.each do |task| %>
-  <li>
-    <%= task.description %>
-  </li>
-<% end %>
+  <% @tasks.each do |task| %>
+    <li>
+      <%= task.description %>
+      <%= link_to "delete", list_task_path(@list, task), method: :delete %>
+    </li>
+  <% end %>
 </ul>
