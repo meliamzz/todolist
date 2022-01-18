@@ -4,7 +4,7 @@
     <div class="card">
       <div class="card-header">
         <%= list.name %>
-        <%= link_to "edit list", edit_list_path(list) %>
+        <%= link_to "rename list", edit_list_path(list) %>
         <%= link_to list_path(list), method: :delete do %>
           <i class="fas fa-trash-alt"></i>
         <% end %>
