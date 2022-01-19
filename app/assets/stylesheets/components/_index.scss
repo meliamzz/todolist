@@ -3,3 +3,11 @@
 @import "avatar";
 @import "navbar";
 @import "banner";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}

@@ -1,15 +1,22 @@
 nav {
   width: 100vw;
+  height: 10vh;
 }
 
 .nav-list {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding: 0;
+  padding: 1em;
+  margin: 0;
 }
 
 .nav-list li a {
   color: black;
+}
+
+.fa-clipboard-check {
+  color: #6B011C;
 }

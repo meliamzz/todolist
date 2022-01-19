@@ -1,13 +1,13 @@
 <nav>
   <ul class="nav-list">
-    <li><i class="fas fa-tasks fa-2x"></i></li>
+    <li><%= link_to root_path do %>
+      <i class="fas fa-clipboard-check fa-3x"></i></li>
+    <% end %>
     <% if user_signed_in? %>
+      <li><%= link_to "Lists", lists_path %></li>
       <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
     <% else %>
       <li><%= link_to "Login", new_user_session_path %></li>
-      <li><%= link_to "Sign up", new_user_registration_path %></li>
     <% end %>
   </ul>
-
-
 </nav>
