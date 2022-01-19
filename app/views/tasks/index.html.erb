@@ -1,22 +1,27 @@
-<h3><%= @list.name %></h3>
-
-<ul>
-  <%= simple_form_for([@list, @task]) do |f| %>
-    <%= f.input :description, label: "What task do you want to add?" %>
-    <%= f.submit "Add!" %>
-  <% end %>
-
-  <% @tasks.each do |task| %>
-    <li>
-    <%= link_to list_task_path(@list, task), method: :patch do %>
-      <% if task.done? %>
-        <i class="far fa-check-circle"></i>
-      <% else %>
-        <i class="far fa-circle"></i>
+<div class="container task-card">
+  <h3 class='text-center'><%= @list.name %></h3>
+  <ul class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
+    <div class="task-form">
+      <%= simple_form_for([@list, @task]) do |f| %>
+        <%= f.input :description, label: "What task do you want to add?" %>
+        <%= f.submit "Add!" %>
       <% end %>
-      <% end %>
-      <%= task.description %>
-      <%= link_to "delete", list_task_path(@list, task), method: :delete %>
-    </li>
-  <% end %>
-</ul>
+    </div>
+    <% @tasks.each do |task| %>
+      <li class="d-flex">
+      <%= link_to list_task_path(@list, task), method: :patch do %>
+        <% if task.done? %>
+          <i class="far fa-check-circle"></i>
+        <% else %>
+          <i class="far fa-circle"></i>
+        <% end %>
+        <% end %>
+        <p class="task-decription"><%= task.description %></p>
+        <%= link_to list_task_path(@list, task), method: :delete do %>
+        <i class="far fa-trash-alt"></i>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+
+</div>

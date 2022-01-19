@@ -1,0 +1,28 @@
+.task-card {
+  h3 {
+    font-family: 'Roboto';
+  }
+  ul {
+    list-style: none;
+  }
+}
+
+li {
+  a {
+    text-decoration: none;
+  }
+  .fa-check-circle {
+    color: $success;
+  }
+
+  .fa-circle {
+    color: $danger;
+  }
+}
+
+.fa-trash-alt {
+  color: $danger;
+}
+.task-description {
+  flex-grow: 1;
+}
