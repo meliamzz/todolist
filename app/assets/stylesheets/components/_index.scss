@@ -4,6 +4,7 @@
 @import "navbar";
 @import "banner";
 @import "list-card";
+@import "btn-santa";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -11,4 +12,8 @@ body {
   background-color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
+}
+
+ul {
+  text-align: left;
 }
