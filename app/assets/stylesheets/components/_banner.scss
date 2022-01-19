@@ -3,4 +3,62 @@
   background-repeat: no-repeat;
   background-position: center;
   height: 434px;
+  h2 {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-top: 1em;
+  }
+  .desktop {
+    display: none;
+  }
+  .btn-santa {
+    background-color: #6B011C;
+    color: white;
+  }
+}
+
+.banner-presentation {
+  text-align: center;
+  h3 {
+    font-size: 1.3em;
+    padding: 1em;
+    font-family: 'Roboto', sans-serif;
+  }
+  .btn-santa {
+    background-color: #6B011C;
+    color: white;
+  }
+}
+
+
+@media (min-width: 564px) {
+  .banner {
+    background-image: url(santa-xl.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    h2 {
+      text-align: left;
+      font-size: 2.3em;
+      padding-left: 2em;
+    }
+    .desktop {
+      display: block;
+    }
+    .btn-santa {
+      width: 180px;
+      margin-top: 5em;
+      margin-left: 3em;
+    }
+  }
+
+  .banner-presentation {
+    .mobile {
+      display: none;
+    }
+    h3 {
+      font-size: 2em;
+    }
+  }
 }

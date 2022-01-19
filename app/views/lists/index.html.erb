@@ -1,7 +1,7 @@
-<div class="lists-list">
+<div class="lists-list row">
   <% @lists.each do |list| %>
     <%= link_to list_tasks_path(list) do %>
-    <div class="card">
+    <div class="card col-12 col-sm-6 col-md-4 col-lg-3">
       <div class="card-header">
         <%= list.name %>
         <%= link_to edit_list_path(list) do %>
