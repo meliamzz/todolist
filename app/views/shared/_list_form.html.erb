@@ -1,4 +1,6 @@
-<%= simple_form_for(@list) do |f| %>
-  <%= f.input :name%>
-  <%= f.submit %>
-<% end %>
+<div class="col-10 col-md-6">
+  <%= simple_form_for(@list) do |f| %>
+    <%= f.input :name, label: "What's your list name?" %>
+    <%= f.submit %>
+  <% end %>
+</div>
