@@ -1,27 +1,29 @@
 <div class="container task-card">
-  <h3 class='text-center'><%= @list.name %></h3>
-  <ul class="col-12 col-sm-10 col-md-8 col-lg-6 mx-auto">
-    <div class="task-form">
-      <%= simple_form_for([@list, @task]) do |f| %>
-        <%= f.input :description, label: "What task do you want to add?" %>
-        <%= f.submit "Add!" %>
-      <% end %>
-    </div>
+
+  <ul class="col-12 col-sm-8 col-lg-5 p-3 mx-auto">
+    <h3 class='my-5'><%= @list.name %></h3>
     <% @tasks.each do |task| %>
-      <li class="d-flex">
-      <%= link_to list_task_path(@list, task), method: :patch do %>
-        <% if task.done? %>
-          <i class="far fa-check-circle"></i>
-        <% else %>
-          <i class="far fa-circle"></i>
+      <li class="d-flex list-task py-2">
+        <%= link_to list_task_path(@list, task), method: :patch, class: "pr-2" do %>
+          <% if task.done? %>
+            <i class="far fa-check-circle"></i>
+          <% else %>
+            <i class="far fa-circle"></i>
+          <% end %>
         <% end %>
-        <% end %>
-        <p class="task-decription"><%= task.description %></p>
+        <p class="task-decription pr-2 m-0"><%= task.description %></p>
         <%= link_to list_task_path(@list, task), method: :delete do %>
-        <i class="far fa-trash-alt"></i>
+          <i class="far fa-trash-alt"></i>
         <% end %>
       </li>
     <% end %>
+    <div class="task-form mt-3">
+      <%= simple_form_for([@list, @task]) do |f| %>
+        <%= f.input_field :description, label: false, placeholder: "Add a new task..." %>
+        <%= button_tag type: "submit" do %>
+          <i class="fas fa-plus"></i>
+        <% end %>
+    <% end %>
+    </div>
   </ul>
-
 </div>
