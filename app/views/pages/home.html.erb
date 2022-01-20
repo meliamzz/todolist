@@ -7,7 +7,7 @@
   <% end %>
 </div>
 
-<div class="banner-presentation">
+<div class="banner-presentation mb-5">
   <h3><strong>List</strong> is your best friend to organized, planned or remember what you have to do!</h3>
   <% if user_signed_in? %>
     <%= link_to "See all my lists!", lists_path, class: "btn btn-santa mobile" %>
@@ -17,21 +17,21 @@
 </div>
 
 <div class="description container row justify-content-between mx-auto">
-  <div class="card col-8 col-md-3">
+  <div class="card col-10 col-md-7 col-lg-3 mb-3 mx-auto">
     <%= image_tag("create.svg", class: "card-img-top") %>
     <div class="card-body">
       <h5 class="card-title text-center">Create a list</h5>
       <p class="card-text">You can create as many list as you want to organize your life!</p>
     </div>
   </div>
-  <div class="card col-8 col-md-3">
+  <div class="card col-10 col-md-7 col-lg-3 mb-3 mx-auto">
     <%= image_tag("add.svg", class: "card-img-top") %>
     <div class="card-body">
       <h5 class="card-title text-center">Add tasks</h5>
       <p class="card-text">Each list can have tasks of your choice.</p>
     </div>
   </div>
-  <div class="card col-8 col-md-3">
+  <div class="card col-10 col-md-7 col-lg-3 mb-3 mx-auto">
     <%= image_tag("done.svg", class: "card-img-top") %>
     <div class="card-body">
       <h5 class="card-title text-center">Just do it!</h5>
