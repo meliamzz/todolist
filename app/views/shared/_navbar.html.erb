@@ -4,7 +4,8 @@
       <i class="fas fa-clipboard-check fa-3x"></i></li>
     <% end %>
     <% if user_signed_in? %>
-      <li><%= link_to "Lists", lists_path %></li>
+      <li><%= link_to "All my lists", lists_path %></li>
+      <li><%= link_to "Create a new list!", new_list_path, class: "btn btn-new-list" %></li>
       <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
     <% else %>
       <li><%= link_to "Login", new_user_session_path %></li>

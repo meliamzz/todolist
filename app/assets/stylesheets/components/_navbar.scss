@@ -1,6 +1,7 @@
 nav {
   width: 100vw;
   height: 10vh;
+  background-color: #6B011C;
 }
 
 .nav-list {
@@ -14,9 +15,10 @@ nav {
 }
 
 .nav-list li a {
-  color: black;
+  color: white;
 }
 
-.fa-clipboard-check {
-  color: #6B011C;
+.btn-new-list {
+  background-color: white;
+  color: #6B011C !important;
 }

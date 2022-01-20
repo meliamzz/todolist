@@ -15,3 +15,27 @@
     <%= link_to "Start now!", new_user_session_path, class: "btn btn-santa mobile" %>
   <% end %>
 </div>
+
+<div class="description container row justify-content-between mx-auto">
+  <div class="card col-8 col-md-3">
+    <%= image_tag("create.svg", class: "card-img-top") %>
+    <div class="card-body">
+      <h5 class="card-title text-center">Create a list</h5>
+      <p class="card-text">You can create as many list as you want to organize your life!</p>
+    </div>
+  </div>
+  <div class="card col-8 col-md-3">
+    <%= image_tag("add.svg", class: "card-img-top") %>
+    <div class="card-body">
+      <h5 class="card-title text-center">Add tasks</h5>
+      <p class="card-text">Each list can have tasks of your choice.</p>
+    </div>
+  </div>
+  <div class="card col-8 col-md-3">
+    <%= image_tag("done.svg", class: "card-img-top") %>
+    <div class="card-body">
+      <h5 class="card-title text-center">Just do it!</h5>
+      <p class="card-text">Now you can do all tasks of your lists, and mark them as done! </p>
+    </div>
+  </div>
+</div>
