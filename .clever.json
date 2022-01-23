@@ -1,9 +1,9 @@
 {
   "apps": [
     {
-      "app_id": "app_d2ace565-a619-4d3a-a428-3f40b1b20d84",
+      "app_id": "app_7083fe49-1d9e-4ef5-9f72-079a714ca80c",
       "org_id": "user_53c23635-2051-485b-a1fd-959b6f24ba0f",
-      "deploy_url": "https://push-n2-par-clevercloud-customers.services.clever-cloud.com/app_d2ace565-a619-4d3a-a428-3f40b1b20d84.git",
+      "deploy_url": "https://push-n2-par-clevercloud-customers.services.clever-cloud.com/app_7083fe49-1d9e-4ef5-9f72-079a714ca80c.git",
       "name": "todolist",
       "alias": "todolist"
     }
