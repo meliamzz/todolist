@@ -8,7 +8,7 @@ Hello, je m'appelle Mélia, et ici je vous présente ma to do list, vous pouvez 
 - Ajouter les tâches de votre choix.
 - Marquer une tâche comme faite ou modifier la tâche.
 
-Déployée en ligne, cette application est accessible en cliquant directement sur ce <a href="https://app-7083fe49-1d9e-4ef5-9f72-079a714ca80c.cleverapps.io/">lien!</a>
+Déployée en ligne, cette application est accessible en cliquant directement sur ce <a href="https://app-7083fe49-1d9e-4ef5-9f72-079a714ca80c.cleverapps.io/" target="_blank">lien!</a>
 
  N'hésitez pas à aller visiter le site! 
 
@@ -20,4 +20,4 @@ Les languages utilisés pour cette to do list :
 
 ## 👥 Contributeurs
 
-<a href="https://github.com/meliamzz">Mélia Mazouzi</a>
+<a href="https://github.com/meliamzz" target="_blank">Mélia Mazouzi</a>
